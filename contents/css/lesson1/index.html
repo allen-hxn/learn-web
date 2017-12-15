@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+   <link rel="stylesheet" href="./../../../assets/reset.css">
+   <style>
+        .app{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+        }
+        .box{
+            background: #FA2;
+            width: 700px;
+            height: 400px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            z-index: 11;
+            /*设定这个div的margin-top的负值为自身的高度的一半,margin-left的值也是自身的宽度的一半的负值.*/ 
+            /*宽为400,那么margin-top为-200px*/ 
+            /*高为200那么margin-left为-100px;*/ 
+            margin: -200px 0 0 -350px;
+        }
+   </style>
+</head>
+<body>
+    <div class="app">
+        <div class="box">
+                <p>absolute定位</p>
+                <p>相对屏幕绝对定位，1.定位必须是fixed 2.相对位置上左都取50% 3.margin倒取长宽的一半</p>
+        </div>
+    </div>
+</body>
+</html>
